@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Giovanny Mora Chaparro - Evaluación final JavaScript: lo esencial</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	<meta name="author" content="Giovanny Mora"/>
+	<meta name="keywords" content="html,css,giovanny,frontend"/>
+	<meta name="description" content="Evaluación final JavaScript: lo esencial"/>	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="mainTitle">
+			<img src="image/nombre.svg" alt="" alt="Giovanny Mora Chaparro" title="Giovanny Mora Chaparro">
+		</h1>
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="nav">
+				  <li class="nav-item">
+				    <a class="nav-link active" href="index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" href="evaluacion.html">Evaluación</a>
+				  </li>
+				</ul>
+			</div>
+		</div><br/>
+		<div class="row">					
+			<div class="col-sm-12 col-md-4 ">
+				<div class="row">
+					<div class="col-sm-12">
+						<h4>Estudiantes del curso.</h4>
+						<p>Para ver el listado de estudiantes haga clic aquí. </p>
+						<button class="btn btn-outline-primary" onclick="mostrarEstudiantes()">Mostrar estudiantes</button><br/><br/>
+						<div id="estudiantes"></div>
+					</div>
+				</div>								
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<div class="row">
+					<div class="col-sm-12 col-md-4">
+						<h4>Calificación más alta.</h4>
+						<p>Si desea conocer al estudiante con la calificación más alta haga clic aquí. </p>
+						<button onclick="mejorNota()" class="btn btn-outline-success">Calificación más alta</button><br/><br/>
+						<p id="mejorNota"></p>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<h4>Calificación más baja.</h4>
+						<p>Si desea conocer al estudiante con la calificación más baja haga clic aquí. </p>
+						<button onclick="peorNota()" class="btn btn-outline-warning">Calificación más baja</button><br/><br/>
+						<p id="peorNota"></p>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<h4>Promedio de calificaciones</h4>
+						<p>Si desea conocer el promedio de las calificaciones haga clic aquí. </p>
+						<button onclick="promedio()" class="btn btn-outline-dark">Calcular promedio</button><br/><br/>
+						<p id="promedio"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-3 textCenter Fborder">
+					<h4>Llámame</h4>
+					<span><i class="fa fa-mobile" aria-hidden="true"> </i> (57+1) 301 2036183</span>
+
+				</div>
+				<div class="col-sm-12-center col-md-3 textCenter Fborder">
+					<h4>Contacto</h4>
+					<span><i class="fa fa-envelope-o" aria-hidden="true"> </i> <a href="mailto:giovannymora9@gmail.com">giovannymora9@gmail.com</a></span>
+
+				</div>
+				<div class="col-sm-12-center col-md-3 textCenter Fborder">
+					<h4>Sígueme</h4>
+					 <a href="https://co.linkedin.com/in/giovanny-mora-95620a33" target="_blank">
+					 	<i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+					 <a href="https://twitter.com/g_morac" target="_blank"><i class="fa fa-twitter" aria-hidden="true"> </i></a>
+					 
+					
+
+				</div>
+				<div class="col-sm-12-center col-md-3 textCenter Fborder">
+					<h4>Gmorac </h4>
+					<span><i class="fa fa-copyright" aria-hidden="true"> </i> Todos los derechos reservados</span>
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/evaluacion.js"></script>
+</body>
+</html>
